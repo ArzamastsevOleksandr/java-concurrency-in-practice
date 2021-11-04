@@ -1,8 +1,8 @@
 package s001.matrix_multiplication;
 
-public class SequentialMatrixMultiplier {
+class SequentialMatrixMultiplier {
 
-    public static int[][] multiply(int[][] m1, int[][] m2) {
+    static int[][] multiply(int[][] m1, int[][] m2) {
         int m1rows = m1.length;
         int m2columns = m2[0].length;
         int[][] result = new int[m1rows][m2columns];
