@@ -17,7 +17,9 @@
    * The setDaemon() method must be called before the start() or IllegalThreadStateException is thrown.
 6. Process uncontrolled exceptions in a thread
    * If an uncaught exception is thrown from within a thread the JVM will look for the Thread.UncaughtExceptionHandler implementation. If none is found - the stacktrace is printed and the thread is terminated.
-7.
+7. Thread local variables
+   * FR: https://www.baeldung.com/java-threadlocal
+   * FR: InheritableThreadLocal
 
 
 # TODO (Implement):
