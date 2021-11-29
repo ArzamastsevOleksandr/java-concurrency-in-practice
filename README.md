@@ -1,10 +1,17 @@
 # learn-concurrency-in-java
 ## Thread management
 1. Create, run, set characteristics of a thread
-   1. If System.exit() is called from one of the running threads - all threads will terminate.
-   2. You can not override thread's id and status
-   3. Only the call to the start() method launches a new execution thread.
-2. 
+   * If System.exit() is called from one of the running threads - all threads will terminate.
+   * You can not override thread's id and status.
+   * Only the call to the start() method launches a new execution thread.
+2. Interrupt a thread
+   * The Thread.interrupt() instance method will set the property of the thread to true. However, to stop thread execution the thread must handle the interruption signal on its own.
+   * Thread.currentThread().isInterrupted() checks if the thread instance was interrupted.
+   * Thread.interrupted() checks if the thread has been interrupted since it was last asked and resets the flag.
+3. 
+
+
+
 # TODO (Implement):
 * Find all prime numbers from a range of N..M
 * Use JMH to benchmark alternative solutions
