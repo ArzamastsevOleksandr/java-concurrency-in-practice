@@ -8,7 +8,10 @@
    * The Thread.interrupt() instance method will set the property of the thread to true. However, to stop thread execution the thread must handle the interruption signal on its own.
    * Thread.currentThread().isInterrupted() checks if the thread instance was interrupted.
    * Thread.interrupted() checks if the thread has been interrupted since it was last asked and resets the flag.
-3. 
+   * Sometimes the run() method might be complex (like having recursive calls). One can throw an InterruptedException and catch it in the run method to stop the recursive execution.
+3. Sleep and resume a thread
+   * There is a method yield() which tells the JVM that the thread can leave the CPU for other tasks. The JVM does not guarantee this behavior.
+4. 
 
 
 
