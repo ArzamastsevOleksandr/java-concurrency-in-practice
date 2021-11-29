@@ -11,7 +11,8 @@
    * Sometimes the run() method might be complex (like having recursive calls). One can throw an InterruptedException and catch it in the run method to stop the recursive execution.
 3. Sleep and resume a thread
    * There is a method yield() which tells the JVM that the thread can leave the CPU for other tasks. The JVM does not guarantee this behavior.
-4. 
+4. Wait for the finalization of the thread
+5. 
 
 
 
