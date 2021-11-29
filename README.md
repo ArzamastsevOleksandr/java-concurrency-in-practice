@@ -20,9 +20,11 @@
 7. Thread local variables
    * FR: https://www.baeldung.com/java-threadlocal
    * FR: InheritableThreadLocal
+8. Thread group
 
 
 # TODO (Implement):
+* A shell script that creates a package with the Main class and main method
 * Find all prime numbers from a range of N..M
 * Use JMH to benchmark alternative solutions
 * Web Server with endpoints to get different stats from a file. A JMeter test to check the serial and concurrent versions.
