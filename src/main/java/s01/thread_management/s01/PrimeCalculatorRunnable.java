@@ -1,5 +1,7 @@
 package s01.thread_management.s01;
 
+import static util.NumberUtil.isPrime;
+
 public class PrimeCalculatorRunnable implements Runnable {
 
     @Override
@@ -16,18 +18,6 @@ public class PrimeCalculatorRunnable implements Runnable {
             ++current;
         }
         System.out.printf("Thread '%s': end. Prime numbers found: %d\n", Thread.currentThread().getName(), primeNumbersCount);
-    }
-
-    private boolean isPrime(long current) {
-        if (current <= 2) {
-            return true;
-        }
-        for (int i = 2; i <= Math.sqrt(current); ++i) {
-            if (current % i == 0) {
-                return false;
-            }
-        }
-        return true;
     }
 
 }
