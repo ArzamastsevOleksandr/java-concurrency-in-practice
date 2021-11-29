@@ -12,7 +12,10 @@
 3. Sleep and resume a thread
    * There is a method yield() which tells the JVM that the thread can leave the CPU for other tasks. The JVM does not guarantee this behavior.
 4. Wait for the finalization of the thread
-5. 
+5. Daemon thread
+   * The JVM exits when the only threads running are all daemon threads. 
+   * The setDaemon() method must be called before the start() or IllegalThreadStateException is thrown.
+6. 
 
 
 
