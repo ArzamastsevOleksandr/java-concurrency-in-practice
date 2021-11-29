@@ -21,6 +21,9 @@
    * FR: https://www.baeldung.com/java-threadlocal
    * FR: InheritableThreadLocal
 8. Thread group
+9. Thread factory
+   * adv: Allows you to customize the thread parameters, collect statistics etc.
+   * dis adv: One must make sure that threads are created via the thread factory to have a consistent codebase.
 
 
 # TODO (Implement):
