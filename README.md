@@ -1,5 +1,5 @@
 # learn-concurrency-in-java
-## Thread management
+## 1. Thread management
 1. Create, run, set characteristics of a thread
    * If System.exit() is called from one of the running threads - all threads will terminate.
    * You can not override thread's id and status.
@@ -24,8 +24,17 @@
 9. Thread factory
    * adv: Allows you to customize the thread parameters, collect statistics etc.
    * dis adv: One must make sure that threads are created via the thread factory to have a consistent codebase.
-
-
+## 2. Basic thread synchronization
+   * Critical section is a block of code that accesses the shared resource and can't be executed by more than one thread at the same time.
+1. Synchronize a method
+   * If one static and one instance methods are synchronized and modify the same data - 2 different threads may execute these methods and create a race condition.
+   * Synchronized on the instance method implicitly uses "this" as the synchronization object.
+   * Synchronized on the static method implicitly uses ".class" as the synchronization object.
+   * Promote correctness over performance.
+   * You can use recursive calls with synchronized methods, since the thread already has access to the synchronized methods of an object.
+   * Limit the scope of the critical section.
+   * Avoid calling I/O operations from the critical section as it may block other threads indefinitely.
+   * 
 # TODO (Implement):
 * A shell script that creates a package with the Main class and main method
 * Find all prime numbers from a range of N..M
