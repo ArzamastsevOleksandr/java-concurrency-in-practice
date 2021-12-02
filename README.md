@@ -41,7 +41,8 @@
    * A lock supports fair/unfair modes via constructor parameter.
    * Ensure that the lock.unlock() is called in the finally statement.
    * A deadlock is a condition when two threads are waiting for the locks that will never be unlocked.
-
+4. Synchronize data access with read/write locks
+   * In cases when multiple read and few write operations are performed against a DS, a ReadWriteLock might improve concurrency performance.
 
 # TODO (Implement):
    * An elevator simulation. The house has N floors and M elevators. People enter/leave the house using the elevator.
@@ -54,6 +55,7 @@
 
 # TODO (Learn):
   * CountDownLatch best practice
+  * ReadWriteLock
   * ReadWriteLock
   * Executors.newCachedThreadPool()
   * Blocking/Non-blocking data structures
