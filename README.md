@@ -34,14 +34,19 @@
    * You can use recursive calls with synchronized methods, since the thread already has access to the synchronized methods of an object.
    * Limit the scope of the critical section.
    * Avoid calling I/O operations from the critical section as it may block other threads indefinitely.
-   * 
+2. Use conditions in synchronized code
+3. 
+
+
 # TODO (Implement):
-* A shell script that creates a package with the Main class and main method
-* Find all prime numbers from a range of N..M
-* Use JMH to benchmark alternative solutions
-* Web Server with endpoints to get different stats from a file. A JMeter test to check the serial and concurrent versions.
+   * An elevator simulation. The house has N floors and M elevators. People enter/leave the house using the elevator.
+   * Producer-Consumer app. Producer sends data packages in order, consumer processes those in the same order. 
+   * A shell script that creates a package with the Main class and main method
+   * Find all prime numbers from a range of N..M
+   * Use JMH to benchmark alternative solutions
+   * Web Server with endpoints to get different stats from a file. A JMeter test to check the serial and concurrent versions.
 
 # TODO (Learn):
-* CountDownLatch best practice
-* Executors.newCachedThreadPool()
-* Blocking/Non-blocking data structures
+  * CountDownLatch best practice
+  * Executors.newCachedThreadPool()
+  * Blocking/Non-blocking data structures
