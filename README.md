@@ -35,7 +35,12 @@
    * Limit the scope of the critical section.
    * Avoid calling I/O operations from the critical section as it may block other threads indefinitely.
 2. Use conditions in synchronized code
-3. 
+3. Synchronize a block of code with a lock
+   * A lock is a more powerful mechanism than a synchronized method/block of code. Where synchronized gives you control only over method/block of code, the lock allows you controlling more complex structures.
+   * A lock has the tryLock() that returns false if lock was not acquired.
+   * A lock supports fair/unfair modes via constructor parameter.
+   * Ensure that the lock.unlock() is called in the finally statement.
+   * A deadlock is a condition when two threads are waiting for the locks that will never be unlocked.
 
 
 # TODO (Implement):
@@ -45,8 +50,10 @@
    * Find all prime numbers from a range of N..M
    * Use JMH to benchmark alternative solutions
    * Web Server with endpoints to get different stats from a file. A JMeter test to check the serial and concurrent versions.
+   * Various deadlock simulations.
 
 # TODO (Learn):
   * CountDownLatch best practice
+  * ReadWriteLock
   * Executors.newCachedThreadPool()
   * Blocking/Non-blocking data structures
