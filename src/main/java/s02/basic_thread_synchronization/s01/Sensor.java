@@ -1,7 +1,7 @@
 package s02.basic_thread_synchronization.s01;
 
 import lombok.RequiredArgsConstructor;
-import util.SleepUtil;
+import util.ThreadUtil;
 
 @RequiredArgsConstructor
 public class Sensor implements Runnable {
@@ -13,10 +13,10 @@ public class Sensor implements Runnable {
         for (int i = 0; i < BasicThreadSynchronization.ROUNDS; ++i) {
             parkingStats.newCarArrived();
             parkingStats.newCarArrived();
-            SleepUtil.sleepMillis(50);
+            ThreadUtil.sleepMillis(50);
 
             parkingStats.newMotorcycleArrived();
-            SleepUtil.sleepMillis(50);
+            ThreadUtil.sleepMillis(50);
 
             parkingStats.carLeft();
             parkingStats.carLeft();
