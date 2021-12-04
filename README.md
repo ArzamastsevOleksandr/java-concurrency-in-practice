@@ -48,7 +48,9 @@
 1. Control concurrent access to one or more copies of a resource
    * A semaphore is a counter controlling access to the shared resources.
    * A semaphore supports fairness via constructor parameter.
-      
+2. Wait for multiple concurrent events
+   * The CountDownLatch is not used to protect a shared resource, but only to synchronize threads with the execution of the task.
+   * Once the CountDownLatch reaches 0, all the calls to it have no effect and a new CountDownLatch must be initialized.
 
 # TODO (Implement):
    * An elevator simulation. The house has N floors and M elevators. People enter/leave the house using the elevator.
