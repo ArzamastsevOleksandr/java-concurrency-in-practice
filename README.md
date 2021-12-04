@@ -44,6 +44,10 @@
 4. Synchronize data access with read/write locks
    * In cases when multiple read and few write operations are performed against a DS, a ReadWriteLock might improve concurrency performance.
 5. Use multiple conditions in a lock
+## 3. Thread synchronization utilities
+1. Control concurrent access to one or more copies of a resource
+   * A semaphore is a counter controlling access to the shared resources.
+   * A semaphore supports fairness via constructor parameter.
       
 
 # TODO (Implement):
