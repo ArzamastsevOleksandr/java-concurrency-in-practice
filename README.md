@@ -51,6 +51,9 @@
 2. Wait for multiple concurrent events
    * The CountDownLatch is not used to protect a shared resource, but only to synchronize threads with the execution of the task.
    * Once the CountDownLatch reaches 0, all the calls to it have no effect and a new CountDownLatch must be initialized.
+3. Synchronize tasks in a common point
+   * The CyclicBarrier might be initialized with a Runnable action that is run when the Barrier is tripped.
+   * The CyclicBarrier can be reset to its initial state.
 
 # TODO (Implement):
    * An elevator simulation. The house has N floors and M elevators. People enter/leave the house using the elevator.
@@ -65,5 +68,6 @@
   * CountDownLatch best practice
   * ReadWriteLock
   * ReadWriteLock
+  * CyclicBarrier advanced usage
   * Executors.newCachedThreadPool()
   * Blocking/Non-blocking data structures
