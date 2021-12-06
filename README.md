@@ -60,6 +60,7 @@
    * The currently-registered parties must wait in the current phase (barrier) before going to the next step of execution (phase).
    * There are three possible parties: registered, arrived (registered threads waiting at the current phase/barrier), unarrived (registered threads on their way to the current phase).
    * Optionally, it is possible to execute a block of code right before advancing to the next phase (when all parties arrive at the phase).
+5. Exchange data between two concurrent tasks
    
 # TODO (Implement):
    * An elevator simulation. The house has N floors and M elevators. People enter/leave the house using the elevator.
