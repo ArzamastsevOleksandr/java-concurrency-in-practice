@@ -54,7 +54,13 @@
 3. Synchronize tasks in a common point
    * The CyclicBarrier might be initialized with a Runnable action that is run when the Barrier is tripped.
    * The CyclicBarrier can be reset to its initial state.
-
+4. Run concurrent-phased tasks
+   * A phaser is made of one or multiple phases that act as barriers for a dynamic number of parties (threads).
+   * During a phaser lifespan the number of parties can be modified dynamically (register/deregister).
+   * The currently-registered parties must wait in the current phase (barrier) before going to the next step of execution (phase).
+   * There are three possible parties: registered, arrived (registered threads waiting at the current phase/barrier), unarrived (registered threads on their way to the current phase).
+   * Optionally, it is possible to execute a block of code right before advancing to the next phase (when all parties arrive at the phase).
+   
 # TODO (Implement):
    * An elevator simulation. The house has N floors and M elevators. People enter/leave the house using the elevator.
    * Producer-Consumer app. Producer sends data packages in order, consumer processes those in the same order. 
@@ -69,5 +75,6 @@
   * ReadWriteLock
   * ReadWriteLock
   * CyclicBarrier advanced usage
+  * Phaser usa cases
   * Executors.newCachedThreadPool()
   * Blocking/Non-blocking data structures
