@@ -68,6 +68,7 @@
 3. Run multiple tasks and process the first result
 4. Run multiple tasks and process all results
 5. Run a task with a delay
+6. Run a task periodically
    
 # TODO (Implement):
    * An elevator simulation. The house has N floors and M elevators. People enter/leave the house using the elevator.
