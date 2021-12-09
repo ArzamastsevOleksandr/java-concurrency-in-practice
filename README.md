@@ -65,7 +65,7 @@
 ## 4. Thread Executors
 1. Create a thread executor and control its tasks
 2. Execute tasks in an executor that returns a result
-3. 
+3. Run multiple tasks and process the first result
    
 # TODO (Implement):
    * An elevator simulation. The house has N floors and M elevators. People enter/leave the house using the elevator.
