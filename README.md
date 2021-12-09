@@ -62,6 +62,9 @@
    * Optionally, it is possible to execute a block of code right before advancing to the next phase (when all parties arrive at the phase).
 5. Exchange data between two concurrent tasks
 6. Complete and link tasks asynchronously
+## 4. Thread Executors
+1. Create a thread executor and control its tasks
+2. 
    
 # TODO (Implement):
    * An elevator simulation. The house has N floors and M elevators. People enter/leave the house using the elevator.
