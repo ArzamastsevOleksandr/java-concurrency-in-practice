@@ -1,4 +1,4 @@
-package s05.for_join_framework;
+package s05.fork_join_framework.s01;
 
 import lombok.RequiredArgsConstructor;
 import util.ThreadUtil;
