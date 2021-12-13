@@ -71,6 +71,8 @@
 6. Run a task periodically
 ## 5. Fork/Join Framework
 1. Create a Fork/Join pool
+2. Join the results of the tasks
+   * TODO: m*n document; LineTask<Long> to process individual lines
    
 # TODO (Implement):
    * An elevator simulation. The house has N floors and M elevators. People enter/leave the house using the elevator.
