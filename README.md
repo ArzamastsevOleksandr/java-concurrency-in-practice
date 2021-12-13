@@ -75,6 +75,9 @@
    * TODO: m*n document; LineTask<Long> to process individual lines
 3. Run tasks asynchronously
    * TODO: CountedCompleter usage
+4. Cancel a task
+   * The ForkJoinTask provides a cancel(boolean) method that allows cancelling a task that has not been executed yet (if the task has started - the call has no effect). 
+   * A limitation of the ForkJoinPool is that it does not allow the cancellation of all the tasks that are in the ForkJoinPool.
    
 # TODO (Implement):
    * An elevator simulation. The house has N floors and M elevators. People enter/leave the house using the elevator.
