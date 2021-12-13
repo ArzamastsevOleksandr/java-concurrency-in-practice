@@ -73,6 +73,8 @@
 1. Create a Fork/Join pool
 2. Join the results of the tasks
    * TODO: m*n document; LineTask<Long> to process individual lines
+3. Run tasks asynchronously
+   * TODO: CountedCompleter usage
    
 # TODO (Implement):
    * An elevator simulation. The house has N floors and M elevators. People enter/leave the house using the elevator.
