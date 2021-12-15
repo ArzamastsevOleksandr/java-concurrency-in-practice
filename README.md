@@ -1,5 +1,5 @@
 # learn-concurrency-in-java
-## 1. Thread management
+## 1. Thread Management
 1. Create, run, set characteristics of a thread
    * If System.exit() is called from one of the running threads - all threads will terminate.
    * You can not override thread's id and status.
@@ -24,7 +24,7 @@
 9. Thread factory
    * adv: Allows you to customize the thread parameters, collect statistics etc.
    * dis adv: One must make sure that threads are created via the thread factory to have a consistent codebase.
-## 2. Basic thread synchronization
+## 2. Basic Thread Synchronization
    * Critical section is a block of code that accesses the shared resource and can't be executed by more than one thread at the same time.
 1. Synchronize a method
    * If one static and one instance methods are synchronized and modify the same data - 2 different threads may execute these methods and create a race condition.
@@ -44,7 +44,7 @@
 4. Synchronize data access with read/write locks
    * In cases when multiple read and few write operations are performed against a DS, a ReadWriteLock might improve concurrency performance.
 5. Use multiple conditions in a lock
-## 3. Thread synchronization utilities
+## 3. Thread Synchronization Utilities
 1. Control concurrent access to one or more copies of a resource
    * A semaphore is a counter controlling access to the shared resources.
    * A semaphore supports fairness via constructor parameter.
@@ -78,7 +78,9 @@
 4. Cancel a task
    * The ForkJoinTask provides a cancel(boolean) method that allows cancelling a task that has not been executed yet (if the task has started - the call has no effect). 
    * A limitation of the ForkJoinPool is that it does not allow the cancellation of all the tasks that are in the ForkJoinPool.
-   
+## 6. Concurrent Collections   
+1. Non-blocking thread-safe deque.
+
 # TODO (Implement):
    * An elevator simulation. The house has N floors and M elevators. People enter/leave the house using the elevator.
    * Producer-Consumer app. Producer sends data packages in order, consumer processes those in the same order. 
